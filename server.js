@@ -36,7 +36,7 @@ app.post("/api/register", async (req, res) => {
 
     res.json({ status: "ok" });
   } catch (err) {
-    res.json({ status: "Duplicate Email" });
+    res.json({ status: "Duplicate Email", error:err });
   }
 });
 
